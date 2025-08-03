@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="">
+   <meta name="keywords" content=""> 
+   <title>Document</title>
+   <link rel="stylesheet" href="assets/css/css_third.css">
+</head>
+<body>
+   <div id="all">
+       <span>age</span>
+        <input type="text" id="age" oninput="showStatusDiv()"><br><br>
+        <div id="statusParent">
+        <span>status</span>  
+          <input type="text" id="status" onchange="getStatus()"><br><br>
+        </div>
+        <div id="childrenParent" class="hide">
+          <span>children</span>
+            <input type="text" id="children"><br><br>
+        </div>
+        <button id="makeDivs" onmouseenter="makeCards()">go</button>
+       <div id="container"></div>
+       <br><br>
+      <button id="mode" id="dark" ondblclick="dark()">dark</button>
+      <button id="mode2" id="light" onmouseleave="light()">light</button>
+   </div>
+   <!-- JS File -->
+      <script src="assets/js/js_third.js"></script>
+</body>
+</html>

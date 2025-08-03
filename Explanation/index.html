@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+/*  
+    body{
+        background-image: url('../images/google.svg');
+        background-color: lightcoral;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #bg{
+        background-image: url('../images/f2.jpg');
+        background-color: lightcoral;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10vh;
+        opacity: 0.5;
+    }
+*/
+body{
+    background-color: rgb(248, 248, 246);
+}
+p{
+    font-size: 60px;
+}
+img{
+    width: 25%;
+    height: 30vh;
+}
+#gridParent{
+    display: grid;
+    grid-template-columns:  500px 200px ;
+    grid-template-rows: 20vh 10vh ;
+    column-gap: 10px;
+    row-gap: 100px;
+}
+.gridChild{
+    background-color: black;
+}
+/* media query >> responsive */
+@media only screen and (max-width: 992px){
+    body{
+        background-color: rgb(128, 240, 139);
+    }
+    p{
+        font-size: 40px;
+    }
+    img{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px){
+    body{
+        background-color: rgb(196, 171, 255);
+    }
+    p{
+        font-size: 40px;
+    }
+    img{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 576px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <p>aaaaa wwwww eeeee</p>
+    </div>
+    <div id="gridParent">
+        <div class="gridChild">
+            <span></span>
+        </div>
+        <div class="gridChild">
+            <span></span>
+        </div>
+        <div class="gridChild">
+            <span></span>
+        </div>
+        <div class="gridChild">
+            <span></span>
+        </div>
+        <div class="gridChild">
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>
