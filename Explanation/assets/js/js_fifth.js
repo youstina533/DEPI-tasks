@@ -70,8 +70,8 @@ console.log(info);
 
 var s = info.splice(1,5);
 console.log("s",s);
-
 console.log("info",info);
+
 s = info.indexOf("hany");
 console.log(s);
 
@@ -82,4 +82,5 @@ console.log(info.toString() + 1111111);
 /*this binding
 arguments
 hoisting => call before defination
+
 readability and intent*/
